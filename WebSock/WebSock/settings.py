@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'MainSock',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'WebSock.wsgi.application'
-
+# Channels
+ASGI_APPLICATION = 'WebSock.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
